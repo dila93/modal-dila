@@ -1,0 +1,22 @@
+{
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+        "prettier",
+        "@typescript-eslint",
+        "react",
+        "react-hooks"
+    ],
+    "settings": {
+      "react": {
+        "version": "detect"
+      }
+    },
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "globals": {
+      "JSX": true
+    }
+  }
