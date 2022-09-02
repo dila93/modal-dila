@@ -1,15 +1,19 @@
 import React from 'react'
+import styled from 'styled-components'
 
 const Modal = () => {
   const onModalClick = (target: any) => {
     console.log('e::: ', target.children)
   }
 
+  const TargetModal = styled.div`
+    cursor: point;
+    background: green;
+  `
+
   return (
     <>
-      <div onClick={(e) => onModalClick(e.target)} className='target-modal'>
-        <div>hola</div>
-      </div>
+      <TargetModal onClick={(e) => onModalClick(e.target)} />
     </>
   )
 }
